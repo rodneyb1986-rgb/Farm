@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HaySpears — Find Your Attachment</title>
+<meta name="description" content="A cleaner attachment finder for bale spears, loader adapters, skid steer attachments, buckets, grapples, augers and custom fabrication.">
+<style>
+:root{--ink:#172018;--muted:#667067;--paper:#f5f3ed;--card:#fff;--line:#dfe2dc;--accent:#315c3a;--accent2:#b88635;--dark:#1b211c}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--paper);color:var(--ink)}
+a{text-decoration:none;color:inherit}.wrap{max-width:1180px;margin:auto;padding:0 22px}
+header{position:sticky;top:0;z-index:10;background:rgba(245,243,237,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:900;letter-spacing:-.04em;font-size:24px}.brand span{color:var(--accent)}
+.navlinks{display:flex;gap:20px;font-size:14px;font-weight:700}.navlinks a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:10px;font-weight:800;border:1px solid var(--accent);background:var(--accent);color:white;cursor:pointer}.btn.alt{background:transparent;color:var(--accent)}
+.hero{padding:74px 0 42px;background:linear-gradient(135deg,#e9eee7 0%,#f5f3ed 58%,#ece7d9 100%)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:44px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:900;color:var(--accent)}
+h1{font-size:clamp(42px,6vw,72px);line-height:.96;letter-spacing:-.055em;margin:12px 0 20px}.hero p{font-size:19px;line-height:1.6;color:var(--muted);max-width:680px}
+.finder{background:var(--dark);color:white;border-radius:22px;padding:26px;box-shadow:0 22px 50px rgba(23,32,24,.18)}
+.finder h2{margin:0 0 7px;font-size:26px}.finder p{margin:0 0 20px;color:#bfc7bf;font-size:14px}
+select,input{width:100%;padding:14px;border-radius:10px;border:1px solid #3b463c;background:#252d26;color:white;font-size:15px;margin:6px 0 10px}
+.finder .btn{width:100%;margin-top:7px;background:var(--accent2);border-color:var(--accent2)}
+section{padding:62px 0}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:24px}.section-head h2{font-size:36px;letter-spacing:-.04em;margin:0}.section-head p{color:var(--muted);max-width:620px;margin:0;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;min-height:155px;transition:.18s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.07);border-color:#c9d1c9}.card .icon{font-size:27px}.card h3{margin:12px 0 7px;font-size:18px}.card p{color:var(--muted);font-size:13px;line-height:1.45;margin:0}
+.featured{background:#202720;color:white}.featured .section-head p{color:#bfc7bf}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.product{background:#293229;border:1px solid #3b463c;border-radius:16px;padding:19px}.product h3{font-size:16px;margin:0 0 10px}.price{font-size:20px;font-weight:900;color:#e1bb70}.product p{color:#bfc7bf;font-size:13px;line-height:1.45;min-height:38px}.product a{display:block;margin-top:16px;color:#e1bb70;font-weight:800;font-size:13px}
+.custom{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}.custombox{background:white;border:1px solid var(--line);border-radius:20px;padding:30px}.custombox ul{padding-left:20px;line-height:1.9;color:var(--muted)}
+footer{background:#121712;color:#bfc7bf;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot strong{color:white}
+.hidden{display:none}.result{margin-top:13px;padding:13px;border-radius:10px;background:#2f3a30;border:1px solid #455245;font-size:13px}
+@media(max-width:900px){.hero-grid,.custom{grid-template-columns:1fr}.grid,.products{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}}
+@media(max-width:560px){.grid,.products{grid-template-columns:1fr}section{padding:45px 0}.hero{padding-top:48px}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap nav">
+  <a class="brand" href="#"><span>HAY</span>SPEAR</a>
+  <nav class="navlinks">
+    <a href="#finder">Find My Attachment</a><a href="#shop">Shop</a><a href="#custom">Custom</a>
+  </nav>
+  <a class="btn" href="https://hayspear.com/contact-us/">Talk to an Expert</a>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<div class="eyebrow">Heavy-duty attachments • Since 1976</div>
+<h1>Tell us what your machine needs to do.</h1>
+<p>Skip the giant catalog. Pick your machine, choose the job, and jump straight to the Hayspear attachment category that fits.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px">
+<a class="btn" href="#finder">Find My Attachment</a>
+<a class="btn alt" href="#shop">Browse Everything</a>
+</div>
+</div>
+<div class="finder" id="finder">
+<h2>Attachment Finder</h2><p>Start with your machine or the job you need to accomplish.</p>
+<label>Machine / hookup</label>
+<select id="machine">
+<option value="">Choose one</option>
+<option value="jd">John Deere</option><option value="case">Case / Case IH</option>
+<option value="cat">CAT IT</option><option value="skid">Skid Steer</option>
+<option value="jcb">JCB / JRB / Volvo</option><option value="euro">Euro / Global / ALO</option>
+<option value="kubota">Kubota / Komatsu</option><option value="nh">Ford / New Holland</option>
+<option value="3pt">3-Point Tractor</option><option value="other">Other / Not Sure</option>
+</select>
+<label>What are you trying to do?</label>
+<select id="job">
+<option value="">Choose one</option><option value="bale">Move hay bales</option>
+<option value="convert">Convert my loader / hookup</option><option value="grapple">Move brush / grapple</option>
+<option value="bucket">Bucket / material handling</option><option value="pallet">Move pallets</option>
+<option value="auger">Grain / auger work</option><option value="custom">Something custom</option>
+</select>
+<button class="btn" onclick="findIt()">Show my options</button>
+<div id="result" class="result hidden"></div>
+</div>
+</div>
+</section>
+
+<section id="shop">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">Shop by equipment</div><h2>Go straight to the right catalog.</h2></div><p>These links open Hayspear's live catalog categories, so the product listings and availability stay current.</p></div>
+<div class="grid">
+<a class="card" href="https://hayspear.com/john-deere-attachments/"><div class="icon">🟢</div><h3>John Deere</h3><p>JD brackets, bale spears and conversion / quick-attach options.</p></a>
+<a class="card" href="https://hayspear.com/case-ih-adapters-spears/"><div class="icon">🔴</div><h3>Case / Case IH</h3><p>Case conversions, adapters, brackets and bale spear equipment.</p></a>
+<a class="card" href="https://hayspear.com/cat-cat-it-attachments/"><div class="icon">🟡</div><h3>CAT IT</h3><p>CAT IT28 brackets, adapters and bale spear options.</p></a>
+<a class="card" href="https://hayspear.com/skid-steer-adapters/"><div class="icon">⬛</div><h3>Skid Steer</h3><p>Quick-attach adapters, conversions and bale spear attachments.</p></a>
+<a class="card" href="https://hayspear.com/jcb-jrb-volvo-telehandlers/"><div class="icon">🚜</div><h3>JCB / JRB / Volvo</h3><p>Telehandler and loader hookup adapters and spear units.</p></a>
+<a class="card" href="https://hayspear.com/euro-global-alo/"><div class="icon">🔧</div><h3>Euro / Global / ALO</h3><p>Universal-style hookup adapters and attachment options.</p></a>
+<a class="card" href="https://hayspear.com/kubota-komatsu/"><div class="icon">🛠️</div><h3>Kubota / Komatsu</h3><p>Loader adapters, bale spear and attachment options.</p></a>
+<a class="card" href="https://hayspear.com/ford-new-holland-implements/"><div class="icon">🔵</div><h3>Ford / New Holland</h3><p>Implements, adapters and bale handling equipment.</p></a>
+<a class="card" href="https://hayspear.com/3-point-tractor-attachments-bale-spears-adapters/"><div class="icon">3️⃣</div><h3>3-Point Tractors</h3><p>3-point bale movers, conversions, spears and antique tractor options.</p></a>
+<a class="card" href="https://hayspear.com/buckets-grapples/"><div class="icon">🪣</div><h3>Buckets & Grapples</h3><p>Buckets, grapples, brush rakes, rock/rake buckets and spear units.</p></a>
+<a class="card" href="https://hayspear.com/bale-spears-gate-accessories/"><div class="icon">🌾</div><h3>Bale Spears</h3><p>Hay bale spears plus gate latches and catches.</p></a>
+<a class="card" href="https://hayspear.com/augers-auger-repairs/"><div class="icon">⚙️</div><h3>Augers</h3><p>Bulk tank, utility, incline, grain-bin, transport and auger parts.</p></a>
+</div>
+</div>
+</section>
+
+<section class="featured">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow" style="color:#e1bb70">Popular right now</div><h2>Featured Hayspear builds.</h2></div><p>Direct links to examples currently featured on the Hayspear catalog.</p></div>
+<div class="products">
+<div class="product"><h3>Great Bend 660 QA → Skid Steer</h3><div class="price">$1,750</div><p>Heavy-duty loader conversion.</p><a href="https://hayspear.com/great-bend-660-qa-to-skid-steer/">View on Hayspear →</a></div>
+<div class="product"><h3>JCB Q Fit → Universal Skid Steer</h3><div class="price">$1,650</div><p>Convert JCB Q Fit to standardized skid steer.</p><a href="https://hayspear.com/jcb-q-fit-to-universal-skid-steer/">View on Hayspear →</a></div>
+<div class="product"><h3>JRB 416 — 4 Spear / 6' Frame</h3><div class="price">$1,750</div><p>Multi-spear bale handling frame.</p><a href="https://hayspear.com/jrb-416-4-spear-on-6-frame/">View on Hayspear →</a></div>
+<div class="product"><h3>Euro → Skid Steer</h3><div class="price">$1,175</div><p>Universal conversion option.</p><a href="https://hayspear.com/euro-to-skid-steer-black/">View on Hayspear →</a></div>
+</div>
+</div>
+</section>
+
+<section id="custom">
+<div class="wrap custom">
+<div>
+<div class="eyebrow">Can't find it?</div>
+<h2 style="font-size:46px;letter-spacing:-.04em;margin:10px 0">Build the attachment around the job.</h2>
+<p style="color:var(--muted);font-size:18px;line-height:1.65">Hayspear says it operates as a complete custom fabrication shop. Instead of forcing a customer into the wrong catalog item, send the team the machine, hookup and job requirements.</p>
+<a class="btn" href="https://hayspear.com/contact-us/">Request a Custom Quote</a>
+</div>
+<div class="custombox">
+<h3>What to send</h3>
+<ul><li>Machine make and model</li><li>Current attachment / hookup</li><li>What you need the attachment to do</li><li>Photos of the loader hookup if possible</li><li>Desired spear length, width or capacity</li></ul>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap foot"><div><strong>HAYSPEAR ATTACHMENT FINDER</strong><br><small>A customer-first front door to the live Hayspear catalog.</small></div><a href="https://hayspear.com/" style="font-weight:800">Open Hayspear.com →</a></div></footer>
+
+<script>
+const urls={
+jd:'https://hayspear.com/john-deere-attachments/',case:'https://hayspear.com/case-ih-adapters-spears/',cat:'https://hayspear.com/cat-cat-it-attachments/',
+skid:'https://hayspear.com/skid-steer-adapters/',jcb:'https://hayspear.com/jcb-jrb-volvo-telehandlers/',
+euro:'https://hayspear.com/euro-global-alo/',kubota:'https://hayspear.com/kubota-komatsu/',
+nh:'https://hayspear.com/ford-new-holland-implements/','3pt':'https://hayspear.com/3-point-tractor-attachments-bale-spears-adapters/',
+other:'https://hayspear.com/'};
+const names={jd:'John Deere',case:'Case / Case IH',cat:'CAT IT',skid:'Skid Steer',jcb:'JCB / JRB / Volvo',euro:'Euro / Global / ALO',kubota:'Kubota / Komatsu',nh:'Ford / New Holland','3pt':'3-Point Tractors',other:'Hayspear catalog'};
+function findIt(){
+ const m=document.getElementById('machine').value,j=document.getElementById('job').value,r=document.getElementById('result');
+ if(!m||!j){r.classList.remove('hidden');r.textContent='Choose both your machine and the job so I can point you to the best starting category.';return}
+ let u=urls[m], label=names[m];
+ if(j==='auger') u='https://hayspear.com/augers-auger-repairs/';
+ if(j==='grapple') u='https://hayspear.com/buckets-grapples/';
+ if(j==='pallet') u='https://hayspear.com/pallet-forks-accessories/';
+ if(j==='bale' && m==='3pt') u='https://hayspear.com/3-point-tractor-attachments-bale-spears-adapters/';
+ if(j==='bale' && m==='skid') u='https://hayspear.com/skidsteer-adapters/skidsteer-bale-spear-attachments/';
+ if(j==='custom') u='https://hayspear.com/contact-us/';
+ r.classList.remove('hidden');
+ r.innerHTML=`<strong>Best starting point: ${j==='custom'?'Custom fabrication':label}</strong><br><span style="color:#bfc7bf">Open the live Hayspear catalog for your setup.</span><br><a href="${u}" style="display:inline-block;margin-top:8px;color:#e1bb70;font-weight:900">Open options →</a>`;
+}
+</script>
+</body>
+</html>

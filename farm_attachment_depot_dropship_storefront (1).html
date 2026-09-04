@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Farm Attachment Depot | Equipment Attachments</title>
+<meta name="description" content="Find the right loader, bale spear, skid steer adapter, bucket, grapple and agricultural attachment.">
+<style>
+:root{--g:#234a2d;--g2:#16351f;--cream:#f4f1e8;--ink:#172019;--muted:#68716a;--line:#d9ded7;--white:#fff;--gold:#c3913e}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:15px system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}a{text-decoration:none;color:inherit}.wrap{max-width:1180px;margin:auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:23px;font-weight:950;letter-spacing:-.04em}.logo span{color:var(--g)}nav{display:flex;gap:22px;font-weight:750;font-size:14px}.cart{border:1px solid var(--g);padding:10px 14px;border-radius:9px;color:var(--g);font-weight:850}
+.hero{background:linear-gradient(120deg,#dfe9df,#f4f1e8 60%,#e9dfca);padding:64px 0}.hero-grid{display:grid;grid-template-columns:1fr 430px;gap:50px;align-items:center}h1{font-size:clamp(42px,6vw,70px);line-height:.95;letter-spacing:-.055em;margin:10px 0 18px}.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:950;color:var(--g)}.hero p{font-size:18px;line-height:1.6;color:var(--muted);max-width:650px}
+.find{background:var(--g2);color:#fff;border-radius:18px;padding:25px;box-shadow:0 18px 45px #19331d25}.find h2{margin:0 0 5px;font-size:25px}.find small{color:#bec8bf}.find label{display:block;margin-top:16px;font-size:12px;font-weight:800}.find select,.find button{width:100%;padding:13px;border-radius:9px;font-size:14px}.find select{background:#203d27;color:white;border:1px solid #426048;margin-top:6px}.find button{margin-top:14px;background:var(--gold);color:#fff;border:0;font-weight:900;cursor:pointer}.answer{margin-top:12px;padding:12px;background:#28472f;border-radius:9px;font-size:13px}.answer a{color:#f0cb86;font-weight:900}
+section{padding:58px 0}.head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:22px}.head h2{font-size:34px;letter-spacing:-.04em;margin:5px 0}.head p{color:var(--muted);max-width:600px;line-height:1.55}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.filter{border:1px solid var(--line);background:#fff;padding:9px 12px;border-radius:999px;cursor:pointer;font-weight:750}.filter.active{background:var(--g);color:#fff;border-color:var(--g)}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.product{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden}.photo{height:145px;background:linear-gradient(135deg,#dce2db,#eee9dd);display:flex;align-items:center;justify-content:center;font-size:48px}.body{padding:16px}.tag{font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:900;color:var(--g)}.product h3{font-size:16px;line-height:1.25;margin:7px 0}.desc{font-size:12px;color:var(--muted);min-height:36px}.price{font-size:22px;font-weight:950;margin:10px 0}.ship{font-size:11px;color:var(--muted)}.actions{display:flex;gap:7px;margin-top:13px}.buy,.view{flex:1;padding:10px;border-radius:8px;font-weight:850;text-align:center;font-size:12px}.buy{background:var(--g);color:#fff;border:0;cursor:pointer}.view{border:1px solid var(--g);color:var(--g)}
+.notice{background:#fff;border:1px solid var(--line);padding:16px;border-radius:12px;font-size:13px;color:var(--muted);margin-top:20px}.notice strong{color:var(--ink)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.step{background:#fff;border:1px solid var(--line);padding:22px;border-radius:15px}.num{font-size:28px;font-weight:950;color:var(--g)}
+footer{background:#121a14;color:#bbc5bd;padding:35px 0}.foot{display:flex;justify-content:space-between}.foot strong{color:#fff}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){nav{display:none}.products,.steps{grid-template-columns:1fr}.hero{padding:45px 0}.head{display:block}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#"><span>FARM</span> ATTACHMENT DEPOT</a>
+<nav><a href="#shop">Shop</a><a href="#how">How it works</a><a href="#quote">Custom Quote</a></nav>
+<div class="cart">Cart <span id="count">0</span></div>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div><div class="eyebrow">Built for farmers • loaders • skid steers</div><h1>Find the attachment that fits your machine.</h1><p>We make the confusing part simple. Choose your machine and job, then get routed to the right attachment. Products are fulfilled by the original supplier once your order is confirmed.</p></div>
+<div class="find"><h2>Attachment Finder</h2><small>Start here instead of digging through catalogs.</small>
+<label>Machine / hookup</label><select id="machine"><option value="">Choose...</option><option value="jd">John Deere</option><option value="case">Case / Case IH</option><option value="cat">CAT IT</option><option value="skid">Skid Steer</option><option value="jcb">JCB / JRB / Volvo</option><option value="euro">Euro / Global / ALO</option><option value="kubota">Kubota / Komatsu</option><option value="nh">Ford / New Holland</option><option value="3pt">3-Point Tractor</option></select>
+<label>Job</label><select id="job"><option value="">Choose...</option><option value="bale">Move hay bales</option><option value="convert">Convert hookup</option><option value="grapple">Brush / grapple work</option><option value="bucket">Bucket / material handling</option><option value="pallet">Pallets</option><option value="auger">Auger / grain</option></select>
+<button onclick="find()">Find My Attachment</button><div id="answer" class="answer" style="display:none"></div>
+</div></div></section>
+
+<section id="shop"><div class="wrap">
+<div class="head"><div><div class="eyebrow">Live supplier catalog</div><h2>Popular attachments</h2></div><p>Prices on this storefront are designed as all-in retail prices with estimated freight built in. For launch, replace the sample freight allowances with your authorized Hayspear list prices and actual freight rules.</p></div>
+<div class="filters"><button class="filter active" onclick="filter('all',this)">All</button><button class="filter" onclick="filter('adapter',this)">Adapters</button><button class="filter" onclick="filter('bale',this)">Bale Spears</button><button class="filter" onclick="filter('bracket',this)">Brackets</button><button class="filter" onclick="filter('auger',this)">Augers</button></div>
+<div class="products" id="products"></div>
+<div class="notice"><strong>Free-shipping pricing engine:</strong> For each SKU, store the supplier list price and an estimated freight allowance. Your customer sees only the all-in retail price. Example formula: <b>customer price = list price + freight allowance</b>. Your private admin view should additionally track supplier cost, freight actually charged, payment fees and net profit.</div>
+<div class="notice"><strong>Important:</strong> This storefront is designed for an authorized reseller/dropship arrangement. Before taking customer orders, get written supplier approval for resale, your wholesale cost, MAP/pricing rules, product imagery, warranty handling, returns, and direct-to-customer fulfillment. Do not represent the supplier as your company.</div>
+</div></section>
+
+<section id="how"><div class="wrap"><div class="head"><div><div class="eyebrow">The business model</div><h2>You sell. Supplier fulfills.</h2></div></div>
+<div class="steps"><div class="step"><div class="num">01</div><h3>Customer buys from you</h3><p>Customer sees your brand, your product page and your retail price and pays your checkout.</p></div><div class="step"><div class="num">02</div><h3>Order is routed</h3><p>Your backend sends the order to the authorized supplier at your agreed wholesale cost, including the customer's shipping details.</p></div><div class="step"><div class="num">03</div><h3>Supplier ships</h3><p>Supplier ships directly to the customer and returns tracking. Your system sends the customer the tracking notification.</p></div></div>
+<div class="notice"><strong>Example margin:</strong> If your negotiated supplier cost is $1,000 and you sell for $1,299, your gross product margin is $299 before payment fees, advertising, refunds, taxes and any shipping difference. Never assume the public Hayspear price is your wholesale cost.</div>
+</div></section>
+
+<section id="quote"><div class="wrap"><div class="head"><div><div class="eyebrow">Need something different?</div><h2>Request a custom attachment quote.</h2></div><p>Capture the machine, hookup, job and photos. Send the lead to the authorized fabrication partner for pricing.</p></div>
+<div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;display:grid;gap:10px;max-width:720px"><input id="qname" placeholder="Name" style="padding:13px;border:1px solid var(--line);border-radius:8px"><input id="qemail" placeholder="Email" style="padding:13px;border:1px solid var(--line);border-radius:8px"><input placeholder="Machine + model" style="padding:13px;border:1px solid var(--line);border-radius:8px"><textarea placeholder="What do you need it to do?" style="min-height:100px;padding:13px;border:1px solid var(--line);border-radius:8px"></textarea><button class="buy" onclick="alert('Demo only — connect this form to your email/CRM before launch.')">Request Quote</button></div></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>FARM ATTACHMENT DEPOT</strong><br><small>Independent reseller storefront concept.</small></div><a href="https://hayspear.com/">Supplier catalog →</a></div></footer>
+
+<script>
+const data=[
+{id:1,type:'adapter',name:'Great Bend 660 QA → Skid Steer',price:2399,icon:'🔩',url:'https://hayspear.com/great-bend-660-qa-to-skid-steer/',desc:'Heavy-duty loader conversion.'},
+{id:2,type:'adapter',name:'JCB Q Fit → Universal Skid Steer',price:2299,icon:'🚜',url:'https://hayspear.com/jcb-q-fit-to-universal-skid-steer/',desc:'Convert JCB Q Fit to universal skid steer.'},
+{id:3,type:'adapter',name:'JRB 416 4-Spear / 6 ft Frame',price:2399,icon:'🌾',url:'https://hayspear.com/jrb-416-4-spear-on-6-frame/',desc:'Multi-spear bale handling frame.'},
+{id:4,type:'bracket',name:'CAT IT 28 Bracket Pair',price:799,icon:'🧰',url:'https://hayspear.com/cat-it-28-bracket-pair/',desc:'Build-your-own attachment brackets.'},
+{id:5,type:'bale',name:'39 in Fluted Tapered Bale Spear',price:169,icon:'🌾',url:'https://hayspear.com/39-fluted-and-tapered-hayspear-w-sleeve-and-nut/',desc:'3,000 lb rating at 30 in load center.'},
+{id:6,type:'auger',name:'6 in Auger Extension — 15 ft',price:249,icon:'⚙️',url:'https://hayspear.com/6-auger-extension-15-long/',desc:'Auger extension for bulk-material applications.'},
+{id:7,type:'adapter',name:'John Deere 48-58 → Skid Steer',price:1899,icon:'🟢',url:'https://hayspear.com/john-deere-48-58-to-skidsteer/',desc:'JD loader to skid steer attachment conversion.'},
+{id:8,type:'bale',name:'3-Point Heavy Duty 2-Spear Stacker',price:1499,icon:'🚜',url:'https://hayspear.com/3-point-heavy-duty-2-spear/',desc:'Category 2 / 3N tractor bale handling.'}
+];
+function render(type='all'){document.getElementById('products').innerHTML=data.filter(x=>type==='all'||x.type===type).map(x=>`<article class="product"><div class="photo">${x.icon}</div><div class="body"><div class="tag">${x.type}</div><h3>${x.name}</h3><div class="desc">${x.desc}</div><div class="price">$${x.price.toLocaleString()}</div><div class="ship">Includes estimated freight. Final price is set from supplier list price + freight allowance.</div><div class="actions"><a class="view" href="${x.url}" target="_blank" rel="noopener">Verify product</a><button class="buy" onclick="add(${x.id})">Add to cart</button></div></div></article>`).join('')}
+function filter(t,b){document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');render(t)}
+function add(id){document.getElementById('count').textContent=+document.getElementById('count').textContent+1;alert('Demo cart: connect Stripe/Shopify/WooCommerce before accepting payment.')}
+function find(){let m=document.getElementById('machine').value,j=document.getElementById('job').value,a=document.getElementById('answer');if(!m||!j){a.style.display='block';a.textContent='Choose both options first.';return}let u='https://hayspear.com/';if(j==='bale')u='https://hayspear.com/bale-spears-gate-accessories/';if(j==='grapple'||j==='bucket')u='https://hayspear.com/buckets-grapples/';if(j==='auger')u='https://hayspear.com/augers-auger-repairs/';if(j==='convert')u='https://hayspear.com/skid-steer-adapters/';a.style.display='block';a.innerHTML=`Best starting category: <strong>${j}</strong><br><a href="${u}" target="_blank" rel="noopener">Verify compatible options →</a>`}
+render();
+</script>
+</body></html>
